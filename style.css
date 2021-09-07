@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #373536;
+    background-color: #efeeee;
+    padding: 0 2rem;
+}
+
+section {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 1.4rem
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.users li a {
+    color: black;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.45);
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.6rem;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.users li a.active {
+    background-color: #c3c3c3;
+}
+
+#single-user {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+}
+
+.single-user-container {
+    width: fit-content;
+    text-align: center;
+}
+
+.single-user-container div {
+    text-align: left;
+}
+
+#carts-button {
+    background-color: #0071e3;
+    color: white;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+#carts-details {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#carts-details span {
+    margin-right: 1rem;
+}
