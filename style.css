@@ -2,22 +2,19 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #373536;
     background-color: #efeeee;
-    padding: 0 2rem;
+    padding: 0 0.5rem;
 }
 
-section {
-    max-width: 50rem;
-    margin: 0 auto;
-}
 
 .title {
     text-align: center;
     font-weight: 600;
+    font-size: 2.3rem;
 }
 
 .subtitle {
     font-weight: 300;
-    font-size: 1.4rem
+    font-size: 1.8rem
 }
 
 .users {
@@ -29,28 +26,31 @@ section {
 
 .users li a {
     color: black;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.45);
+    box-shadow: 3px 3px 3px rgba(209,205,199,0.32), -3px -3px 3px #fff;
     padding: 0.2rem 0.5rem;
     margin-bottom: 0.6rem;
     display: block;
     border-radius: 10px;
     text-align: center;
 }
-
 .users li a.active {
-    background-color: #c3c3c3;
+    color: #8B0000
 }
 
-#single-user {
+.users li a.active, #single-user.active .single-user-container {
+    box-shadow: -3px -3px 3px rgba(209,205,199,0.32), 3px 3px 3px #fff;
+    background-color: #e7e7e7;
+}
+
+.single-user-container, .carts-details-container {
+    text-align: center;
+    padding: 1rem;
     display: flex;
     justify-content: center;
-    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.45);
+    flex-direction: column;
+    box-shadow: 6px 6px 6px rgba(209,205,199,0.32), -6px -6px 6px #fff;
     border-radius: 10px;
-}
-
-.single-user-container {
-    width: fit-content;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .single-user-container div {
@@ -63,17 +63,48 @@ section {
     border-radius: 100px;
     outline: none;
     border: none;
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem 1.4rem;
     margin: 1rem 0;
     cursor: pointer;
+    width: fit-content;
 }
 
-#carts-details {
-    margin-top: 1.2rem;
+#carts-details .cart-date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem;
+    text-align: left;
+}
+
+#carts-details .cart-date.info {
+    margin-top: 6rem;
+    font-weight: 300;
+}
+
+.product {
+    text-align: left;
+}
+
+.product div {
     display: flex;
-    gap: 2rem;
+}
+.product div span {
+    width: 50%;
 }
 
-#carts-details span {
-    margin-right: 1rem;
+@media screen and (min-width: 1000px) {
+    .title {
+        font-size: 3rem;
+    }
+    .app-content {
+        display: flex;
+        max-width: 65rem;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    section {
+        max-width: 32%;
+        flex: 1 0;
+    }
 }
